@@ -3,8 +3,7 @@ function determineType(arg) {
         return typeof arg;
     } else {
         return "undefined";
-    }
-    
+    } 
 }
 
 console.log(determineType(""));
