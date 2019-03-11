@@ -6,4 +6,5 @@ function determineType(arg) {
     }
     
 }
+
 console.log(determineType(""));
