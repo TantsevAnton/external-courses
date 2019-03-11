@@ -6,4 +6,4 @@ function determineType(arg) {
     }
     
 }
-console.log(determineType(""));
+console.log(determineType(1));
