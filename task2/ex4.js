@@ -12,6 +12,7 @@ function checkIfElementsSameInArray(arr) {
         
         if (numberOccurrences > 1) {
             bool = true;
+            break;
         } 
     }
 
