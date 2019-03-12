@@ -1,22 +1,19 @@
 function checkIfElementsSameInArray(arr) {  
-    let bool = false;
-
     for (var i = 0; i < arr.length; i++) {
-        var numberOccurrences = 0;
+        var number = 0;
 
         for (var j = 0; j < arr.length; j++) {
 			if (arr[i] === arr[j]) {
-				numberOccurrences++;
-			}
-        }
-        
-        if (numberOccurrences > 1) {
-            bool = true;
-            break;
+				number++;
+            }
+            
+            if (number > 1) {
+                return true;
+            }
         } 
     }
 
-    return bool;
+    return false;
 }
 
 var result = checkIfElementsSameInArray([1, "Anton"]);
