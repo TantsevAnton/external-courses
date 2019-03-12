@@ -2,8 +2,8 @@ function determineType(arg) {
     if ((typeof arg === "number") || (typeof arg === "string")) {
         return typeof arg;
     } else {
-        return "undefined";
+        return undefined;
     } 
 }
 
-console.log(determineType(""));
+console.log(determineType(true));
