@@ -1,22 +1,27 @@
-function checkIfElementsSameInArray(arr) {
-    if (arr.length >= 2) {
-        let bool = true;
-        for (let value of arr) {
-            if (value !== arr[0]) {
-                bool = false;
-                break;
-            }
+function checkIfElementsSameInArray(arr) {  
+    let bool = false;
+
+    for (var i = 0; i < arr.length; i++) {
+        var numberOccurrences = 0;
+
+        for (var j = 0; j < arr.length; j++) {
+			if (arr[i] === arr[j]) {
+				numberOccurrences++;
+			}
         }
-        return bool;       
-    } else {
-        return "The length of the array is less than two! Comparison is meaningless!"
+        
+        if (numberOccurrences > 1) {
+            bool = true;
+        } 
     }
+
+    return bool;
 }
 
 var result = checkIfElementsSameInArray([1, "Anton"]);
 console.log(result);
 
-result = checkIfElementsSameInArray([3, 3, 3, 3]);
+result = checkIfElementsSameInArray([3, 3, 3, 2]);
 console.log(result);
 
 result = checkIfElementsSameInArray([]);
