@@ -4,11 +4,9 @@ var user = {name: "John",
 }
 
 function check(str, obj){
-    for(let key in obj){
-        if(!(obj.hasOwnProperty(str))) {
-            obj[str] = 'new';
-        } 
-    }
+    if(!(obj.hasOwnProperty(str))) {
+        obj[str] = 'new';
+    } 
     return obj;
 }
 

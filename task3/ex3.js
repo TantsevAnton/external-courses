@@ -4,13 +4,11 @@ var user = {name: "John",
 }
 
 function check(str, obj){
-    for(let key in obj){
-        if(obj.hasOwnProperty(str)) {
-            return true;
-        } else{
-            return false;
-        }
+    if(obj.hasOwnProperty(str)) {
+        return true;
+    } else{
+        return false;
     }
 }
 
-console.log(check("spous", user));
+console.log(check("spouse", user));
