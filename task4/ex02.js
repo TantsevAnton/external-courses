@@ -1,6 +1,5 @@
 function createAnEmptyObject() {
-    obj = {};
-    obj.__proto__ = null;
+    obj = Object.create(null);
     return obj;
 }
 
