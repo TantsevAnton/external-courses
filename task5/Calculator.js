@@ -97,4 +97,3 @@ Calculator.divide()(2);
 console.log(Calculator.getResult()); 
 
 console.log(Calculator.reset());
-
