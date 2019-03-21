@@ -84,14 +84,17 @@ var Calculator = {
     }
 }
 
-console.log(Calculator.getResult()); // 0
+console.log(Calculator.getResult()); 
 
-Calculator.add(false)();
+Calculator.add(1)();
 
-console.log(Calculator.getResult()); // 0
+console.log(Calculator.getResult()); 
 
 Calculator.subtract()(2)()();
 Calculator.multiply()(2)(3)();
 Calculator.divide()(2);
 
-console.log(Calculator.getResult()); // 0
+console.log(Calculator.getResult()); 
+
+console.log(Calculator.reset());
+
