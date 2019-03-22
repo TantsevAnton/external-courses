@@ -1,14 +1,14 @@
+var result = 0;
+
 var Calculator = {
 
-    result: 0,
-
     getResult: function() {
-        return this.result;
+        return result;
     },
 
     reset: function() {
-        this.result = 0;
-        return this.result;
+        result = 0;
+        return result;
     },
 
     add: function(arg) {
@@ -16,14 +16,14 @@ var Calculator = {
             arg = 0;           
         }
 
-        this.result = this.result + arg;
+        result = result + arg;
 
         return function f(arg) {
             if (typeof arg === "undefined"){
                 arg = 0;           
             }
 
-            Calculator.result = Calculator.result + arg;
+            result = result + arg;
 
             return f;
         }
@@ -34,14 +34,14 @@ var Calculator = {
             arg = 0;           
         }
 
-        this.result = this.result - arg;
+        result = result - arg;
 
         return function f(arg) {
             if (typeof arg === "undefined"){
                 arg = 0;           
             }
 
-            Calculator.result = Calculator.result - arg;
+            result = result - arg;
 
             return f;
         }
@@ -52,14 +52,14 @@ var Calculator = {
             arg = 1;           
         }
 
-        this.result = this.result / arg;
+        result = result / arg;
 
         return function f(arg) {
             if (typeof arg === "undefined"){
                 arg = 1;           
             }
 
-            Calculator.result = Calculator.result / arg;
+            result = result / arg;
 
             return f;
         }
@@ -70,14 +70,14 @@ var Calculator = {
             arg = 1;           
         }
 
-        this.result = this.result * arg;
+        result = result * arg;
 
         return function f(arg) {
             if (typeof arg === "undefined"){
                 arg = 1;           
             }
 
-            Calculator.result = Calculator.result * arg;
+            result = result * arg;
 
             return f;
         }
