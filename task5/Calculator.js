@@ -1,88 +1,91 @@
-var result = 0;
+var Calculator = (function() {
 
-var Calculator = {
+    var _result = 0;
 
-    getResult: function() {
-        return result;
-    },
+    return {
 
-    reset: function() {
-        result = 0;
-        return result;
-    },
-
-    add: function(arg) {
-        if (typeof arg === "undefined"){
-            arg = 0;           
-        }
-
-        result = result + arg;
-
-        return function f(arg) {
+        getResult: function() {
+            return _result;
+        },
+    
+        reset: function() {
+            _result = 0;
+            return _result;
+        },
+    
+        add: function(arg) {
             if (typeof arg === "undefined"){
                 arg = 0;           
             }
-
-            result = result + arg;
-
-            return f;
-        }
-    },
-
-    subtract: function(arg) {
-        if (typeof arg === "undefined"){
-            arg = 0;           
-        }
-
-        result = result - arg;
-
-        return function f(arg) {
+    
+            _result = _result + arg;
+    
+            return function f(arg) {
+                if (typeof arg === "undefined"){
+                    arg = 0;           
+                }
+    
+                _result = _result + arg;
+    
+                return f;
+            }
+        },
+    
+        subtract: function(arg) {
             if (typeof arg === "undefined"){
                 arg = 0;           
             }
-
-            result = result - arg;
-
-            return f;
-        }
-    },
-
-    divide: function(arg) {
-        if (typeof arg === "undefined"){
-            arg = 1;           
-        }
-
-        result = result / arg;
-
-        return function f(arg) {
+    
+            _result = _result - arg;
+    
+            return function f(arg) {
+                if (typeof arg === "undefined"){
+                    arg = 0;           
+                }
+    
+                _result = _result - arg;
+    
+                return f;
+            }
+        },
+    
+        divide: function(arg) {
             if (typeof arg === "undefined"){
                 arg = 1;           
             }
-
-            result = result / arg;
-
-            return f;
-        }
-    },
-
-    multiply: function(arg){
-        if (typeof arg === "undefined"){
-            arg = 1;           
-        }
-
-        result = result * arg;
-
-        return function f(arg) {
+    
+            _result = _result / arg;
+    
+            return function f(arg) {
+                if (typeof arg === "undefined"){
+                    arg = 1;           
+                }
+    
+                _result = _result / arg;
+    
+                return f;
+            }
+        },
+    
+        multiply: function(arg){
             if (typeof arg === "undefined"){
                 arg = 1;           
             }
-
-            result = result * arg;
-
-            return f;
-        }
+    
+            _result = _result * arg;
+    
+            return function f(arg) {
+                if (typeof arg === "undefined"){
+                    arg = 1;           
+                }
+    
+                _result = _result * arg;
+    
+                return f;
+            }
+        }  
     }
-}
+})();
 
 console.log(Calculator.getResult()); 
 
