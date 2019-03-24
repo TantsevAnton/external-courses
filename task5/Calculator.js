@@ -7,8 +7,8 @@ var Calculator = (function() {
     }
 
     function reset() {
-    _result = 0;
-    return _result;
+        _result = 0;
+        return _result;
     }
 
     function add(arg) {
