@@ -1,0 +1,15 @@
+div {
+    background: #F00;
+    margin: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+th, td {
+    border: 1px solid black;
+}
