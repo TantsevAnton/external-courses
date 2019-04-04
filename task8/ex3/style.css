@@ -1,0 +1,30 @@
+div {
+    text-align: center;
+    margin: 5em;
+}
+
+#div1, #div5 {
+    border: 1em double black;  
+}
+
+#div2 {
+    outline: 1em solid blue;
+}
+
+#div3 {
+    box-shadow: 0 0 0 1em green;
+}
+
+#div4 {
+    background: red;
+    border: 1em solid white;      
+}
+
+#div4 div {
+    background: white;
+    margin: 1em;
+}
+
+#div5 {
+    border-image: url(images/border.png) 40 round;
+}
