@@ -28,3 +28,13 @@ div {
 #div5 {
     border-image: url(images/border.png) 40 round;
 }
+
+#div6 {
+    background: yellow;
+    padding: 1em;
+}
+
+#div6 div {
+    background: white;
+    margin: 0;
+}

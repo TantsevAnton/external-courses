@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=cyrillic);
+
+* {
+    margin-bottom: 50px;
+}
+
+#div1_1 {
+    background-color: rgb(50%, 10%, 53%);
+    font-size: 2em;
+    width: 150%;
+    margin-left: -150px; 
+}
+
+#div3_1 {
+    background-color: beige;
+}
+
+html {
+    font-size: 16px;
+}
+
+#div3 {
+    font-size: 1.3rem;
+}
