@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
 
 * {
     margin-bottom: 50px;
@@ -8,11 +8,19 @@
     background-color: rgb(50%, 10%, 53%);
     font-size: 2em;
     width: 150%;
-    margin-left: -150px; 
+    margin-left: -150px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-variant: initial;
+    font-weight: lighter;
+    text-decoration: line-through;
+    text-transform: lowercase;
 }
 
 #div3_1 {
     background-color: beige;
+    font-family: sans-serif;
+    line-height: normal;
+    text-transform: none;
 }
 
 html {
@@ -21,4 +29,8 @@ html {
 
 #div3 {
     font-size: 1.3rem;
+    font-family: "Audiowide", "Comic Sans MS";
+    font-style: italic;
+    text-align: right;
+    text-indent: 50px;
 }
