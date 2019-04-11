@@ -1,7 +1,9 @@
 button {
     width: 155px;
     height: 36px;
+    font-size: 16px;
     border: 0.4px solid rgb(161,161,161);
+    outline: none;
     background: linear-gradient(to top, rgb(174,174,174), rgb(227,227,227));
     border-radius: 5px;
     box-shadow: 0 1px 0.8px rgb(110,110,110), 
@@ -10,11 +12,23 @@ button {
                 0 0 0.4px 7px rgb(102,102,102);
 }
 
+button:hover {
+    background: linear-gradient(to top, rgb(190,190,190), rgb(250,250,250));    
+}
+
+button:active {
+    font-size: 15px;
+    background: linear-gradient(to top, rgb(180,180,180), rgb(240,240,240));  
+    box-shadow: inset 0 0 1.5px 0.75px rgb(110,110,110), 
+    0 0 0 4px rgb(203,203,203),
+    0 0 0 5.5px white, 
+    0 0 0.4px 7px rgb(102,102,102);
+}
+
 span {
     text-transform: uppercase;
     font-weight: 650;
     color: rgb(85,85,85);
-    font-size: 16px;
 }
 
 span:before {
