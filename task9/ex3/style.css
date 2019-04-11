@@ -1,0 +1,30 @@
+button {
+    width: 155px;
+    height: 36px;
+    border: 0.4px solid rgb(161,161,161);
+    background: linear-gradient(to top, rgb(174,174,174), rgb(227,227,227));
+    border-radius: 5px;
+    box-shadow: 0 1px 0.8px rgb(110,110,110), 
+                0 0 0 4px rgb(203,203,203),
+                0 0 0 5.5px white, 
+                0 0 0.4px 7px rgb(102,102,102);
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: 650;
+    color: rgb(85,85,85);
+    font-size: 16px;
+}
+
+span:before {
+    content: "\002605";
+    color: rgb(136,136,136);
+    margin-right: 7px;
+}
+
+span:after {
+    content: "\002605";
+    color: rgb(136,136,136);
+    margin-left: 7px; 
+}
