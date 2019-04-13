@@ -43,3 +43,9 @@
 [Поправьте сайдбар двумя способами - используя Grid и Flex](https://codepen.io/chriscoyier/pen/ClGcF).
 
 Для выполнения задания необходимо выполнить fork с помощью соответствующей кнопки на codePen или залить файл с заданием в PullRequest.
+
+Решение:
+
+Используя Flex - https://codepen.io/anon/pen/MRvWKV
+
+Используя Grid - https://codepen.io/anon/pen/KYvKLG
