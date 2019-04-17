@@ -8,10 +8,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="http://httpbin.org/" method="post">
-        <label for=""><input type="text"></label>
-        <label for=""></label>
-        <label for=""></label>
+    <!--<form action="http://httpbin.org/get" name="form" method="get">-->
+    <form action="http://httpbin.org/post" name="form" method="post">
+        <fieldset name="personaldata">
+            <legend>Personal data</legend>
+            <p><label>Surname<input type="text" name="surname"></label></p>
+            <p><label>First Name<input type="text" name="firstname"></label></p>
+            <p><label>Middle name<input type="text" name="middlename"></label></p>
+            <p>
+                <label>
+                    You are
+                    <input type="radio" name="male">male
+                    <input type="radio" name="female">female
+                </label>
+            </p>
+            <p><label>Age<input type="number" name="age" min="18" max="101"></label></p>
+            <p><label>Country of Residence<select name="countryofresidence"></select></label></p>
+            <p>
+                <label>
+                    City
+                    <input type="checkbox" name="ryazan">Ryazan
+                    <input type="checkbox" name="moscow">Moscow
+                </label>
+            </p>
+            <p><label>Photography<input type="file" name="photography"></label></p>
+            <hr>
+            <p>
+                <label>
+                    Title
+                    <select name="title" multiple>
+                        <optgroup label="Techonologies">
+                                <option>Web Master</option>
+                                <option>Database Administrator</option>
+                                <option>Computer-aided design</option>
+                        </optgroup>
+    
+                        <optgroup label="Finance">
+                            <option>Economic Planning</option>
+                            <option>Management accounting</option>
+                            <option>Budgeting and planning</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </p>
+            <p><label>Salary<input type="range" name="salary"></label></p>
+            <textarea name="additionaldata" placeholder="Tell us about yourself..."></textarea>
+        </fieldset>
+
+        <fieldset name="contactinformation">
+            <legend>Contact Information</legend>
+            <p><label>Site<input type="url" name="site"></label></p>
+            <p><label>Email<input type="email" name="email"></label></p>
+            <p><label>Phone<input type="tel" name="phone"></label></p>
+        </fieldset>
+
+        <p><label>Password<input type="password" name="password" required></label></p>
+
+        <input type="submit" name="submit">
+        <input type="reset" name="reset">
     </form>
 </body>
 </html>
