@@ -1,0 +1,26 @@
+@import "header.css"; 
+@import "customer.css"; 
+
+#table {
+    font-family: Sans-serif;
+}
+
+td {
+    padding: 18px;
+}
+
+tr {
+    color: rgb(77,100,123);
+}
+
+tr:nth-child(2n) {
+    background: rgb(242,246,250); 
+}
+
+tr:nth-child(2n+1) {
+    background: rgb(232,237,244); 
+}
+
+tr:hover {
+    background: rgb(226,229,233);
+}

@@ -1,0 +1,7 @@
+#header th {
+    background: rgb(227,234,243);
+    text-transform: uppercase;
+    color: rgb(124,146,168);
+    font-size: 0.7em;
+    padding: 7px;
+}
