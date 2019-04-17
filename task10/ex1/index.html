@@ -23,7 +23,7 @@
                 </label>
             </p>
             <p><label>Age<input type="number" name="age" min="18" max="101"></label></p>
-            <p><label>Country of Residence<select name="countryofresidence"></select></label></p>
+            <p><label>Country of Residence<select name="countryofresidence" id="selectorcountryofresidence"></select></label></p>
             <p>
                 <label>
                     City
@@ -36,7 +36,7 @@
             <p>
                 <label>
                     Title
-                    <select name="title" multiple>
+                    <select name="title" id="selectortitle" multiple>
                         <optgroup label="Techonologies">
                                 <option>Web Master</option>
                                 <option>Database Administrator</option>
@@ -52,7 +52,7 @@
                 </label>
             </p>
             <p><label>Salary<input type="range" name="salary"></label></p>
-            <textarea name="additionaldata" placeholder="Tell us about yourself..."></textarea>
+            <textarea name="additionaldata" cols="50" rows="10" placeholder="Tell us about yourself..."></textarea>
         </fieldset>
 
         <fieldset name="contactinformation">
@@ -64,8 +64,8 @@
 
         <p><label>Password<input type="password" name="password" required></label></p>
 
-        <input type="submit" name="submit">
-        <input type="reset" name="reset">
+        <input type="submit" name="submit" class="button">
+        <input type="reset" name="reset" class="button">
     </form>
 </body>
 </html>

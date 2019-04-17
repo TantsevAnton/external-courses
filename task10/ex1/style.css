@@ -6,6 +6,15 @@ input {
     margin-left: 4px;
 }
 
-select {
-    
+#selectorcountryofresidence {
+    margin-left: 4px;
+    width: 67px;
+}
+
+#selectortitle {
+    height: 138px;
+}
+
+.button {
+    margin: initial;
 }
