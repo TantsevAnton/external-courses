@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(open_sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url(open_sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(open_sans/OpenSans-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1345px) {
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'OpenSans', 'AdobeInvisFon', 'AdobeArabic-Regular';
+    font-size: 41pt;
+    color: rgba(54, 135, 196, 255);
+    background: url(images/logo-background-tablet.png);
+    background-repeat: no-repeat;
+    background-position: 50% 170%;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 6px; 
+}
+
+.search {
+    margin: 60px 10px;
+    position: relative;
+}
+
+.search input[type="search"] {
+    padding: 6px 10px 6px 15px;
+    border: none;
+    font-family: 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
+    font-size: 15pt;
+    color: black;
+    text-align: left;
+    outline: none;
+    width: 105%;
+}
+.search input[type="submit"] {
+    background: url(images/loupo.png);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 7px;
+    right: 240px;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 35px;
+}
+
+#nav img {
+    margin: 5px;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 30%;
+}
+
+#a {
+    background: url(images/iback-tablet.png);
+    background-repeat: no-repeat;
+    height: 730px;
+    background-size: 100% 736px;
+}
+
+nav {
+    display: none;
+}
+
+ 
+article {
+    background: white;
+    margin: 0 0 1rem 0;
+}
+    
+article, section {
+    padding: 1rem;
+}
+
+#aa {
+    font-family: 'OpenSans-Bold', 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
+    font-size: 42pt;
+    color: rgba(255, 255, 255, 255);
+    position: relative;
+    text-align: center;
+    padding-top: 16rem;
+    flex: auto;
+    margin: 0;
+    z-index: 1;
+}
+
+#ab {
+    font-family: 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
+    font-size: 32.39189pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    margin: 0;
+    position: relative;
+    bottom: 60px;
+    left: 50px;
+    z-index: 0;
+}
+
+h2 {
+    font-family: 'OpenSans-Bold', 'AdobeInvisFont', 'AdobeArabic-Regular';
+    font-size: 26pt;
+    color: rgba(109, 110, 113, 255);
+    text-align: left;
+}
+
+article p {
+    font-family: 'OpenSans-Light', 'AdobeInvisFon', 'AdobeArabic-Regular';
+    font-size: 16pt;
+    color: rgba(109, 110, 113, 255);
+    text-align: justify;
+}
+
+article {
+    position: relative;
+    margin: 10px 100px;
+    padding-left: 130px; 
+}
+
+article .img {
+    position: absolute;
+    left: 5px;
+}
