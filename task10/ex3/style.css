@@ -13,15 +13,17 @@
     src: url(open_sans/OpenSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url(open_sans/OpenSans-Semibold.ttf);
+}
+
+
 body {
     margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-@media (max-width: 1345px) {
-
 }
 
 header {
@@ -40,11 +42,13 @@ h1 {
     background-position: 50% 170%;
     width: 200px;
     text-align: center;
-    padding-bottom: 6px; 
+    padding-bottom: 6px;
+    position: relative;
+    left: 90px;
 }
 
 .search {
-    margin: 60px 10px;
+    margin: 50px;
     position: relative;
 }
 
@@ -89,7 +93,7 @@ main {
 #a {
     background: url(images/iback-tablet.png);
     background-repeat: no-repeat;
-    height: 730px;
+    height: 736px;
     background-size: 100% 736px;
 }
 
@@ -97,23 +101,18 @@ nav {
     display: none;
 }
 
- 
 article {
     background: white;
     margin: 0 0 1rem 0;
 }
     
-article, section {
-    padding: 1rem;
-}
-
 #aa {
     font-family: 'OpenSans-Bold', 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
     font-size: 42pt;
     color: rgba(255, 255, 255, 255);
     position: relative;
     text-align: center;
-    padding-top: 16rem;
+    padding-top: 15rem;
     flex: auto;
     margin: 0;
     z-index: 1;
@@ -129,6 +128,10 @@ article, section {
     bottom: 60px;
     left: 50px;
     z-index: 0;
+}
+
+#slider {
+    display: none;
 }
 
 h2 {
@@ -147,11 +150,102 @@ article p {
 
 article {
     position: relative;
-    margin: 10px 100px;
+    margin: 10px 250px;
     padding-left: 130px; 
 }
 
 article .img {
     position: absolute;
     left: 5px;
+}
+
+@media (min-width: 1480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #a {
+        background: url(images/iback-desktop.png);
+        height: 885px;
+        background-size: 100% 885px;
+    }
+    
+    #ar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    article {
+        margin: 50px 5%;
+        width: 530px;
+    }
+
+    article p {
+        width: 519px;
+    }
+
+    article .img {
+        top: 15px;
+    }
+
+    #ar1 {
+        margin-left: 0;
+    }
+
+    #ar2 {
+        margin-right: 0;
+    }
+
+    #a {
+        position: relative;
+    }
+
+    #slider {
+        display: flex;
+        position: absolute;
+        left: 46%;
+        top: 60%;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    #slide1 figcaption {
+        position: relative;
+        bottom: 70px;
+        background: rgba(136, 201, 78, 0.9);
+        padding: 15px 10px;
+        text-align: center; 
+    }
+
+    #slide2 figcaption {
+        position: relative;
+        bottom: 70px;
+        background: rgba(254, 235, 117, 0.9);
+        padding: 15px 10px;
+        text-align: center;    
+    }
+
+    #slide1 figcaption span {
+        
+        font-family: 'OpenSans-Semibold', 'AdobeInvisFon', 'AdobeArabic-Regular';
+        font-size: 14pt;
+        color: rgba(255, 255, 255, 255);
+        vertical-align: 8px;
+        margin: 5px;
+    }
+
+    #slide2 figcaption span {
+        font-family: 'OpenSans-Semibold', 'AdobeInvisFon', 'AdobeArabic-Regular';
+        font-size: 14pt;
+        color: rgba(204, 152, 0, 255);
+        vertical-align: 8px;
+        margin: 5px;
+    }
+
+    #switch {
+        background: #f4f4f4;
+    }
 }
