@@ -1,23 +1,22 @@
 @font-face {
     font-family: 'OpenSans-Bold';
-    src: url(open_sans/OpenSans-Bold.ttf);
+    src: url(fonts_open_sans/OpenSans-Bold.ttf);
 }
 
 @font-face {
     font-family: 'OpenSans-Light';
-    src: url(open_sans/OpenSans-Light.ttf);
+    src: url(fonts_open_sans/OpenSans-Light.ttf);
 }
 
 @font-face {
     font-family: 'OpenSans';
-    src: url(open_sans/OpenSans-Regular.ttf);
+    src: url(fonts_open_sans/OpenSans-Regular.ttf);
 }
 
 @font-face {
     font-family: 'OpenSans-Semibold';
-    src: url(open_sans/OpenSans-Semibold.ttf);
+    src: url(fonts_open_sans/OpenSans-Semibold.ttf);
 }
-
 
 body {
     margin: 0;
@@ -62,6 +61,7 @@ h1 {
     outline: none;
     width: 105%;
 }
+
 .search input[type="submit"] {
     background: url(images/loupo.png);
     border: none;
@@ -74,13 +74,13 @@ h1 {
     right: 240px;
 }
 
-#nav {
+#menu_icon {
     display: flex;
     flex-direction: column;
     margin: 18px 35px;
 }
 
-#nav img {
+#menu_icon img {
     margin: 5px;
 }
 
@@ -93,7 +93,7 @@ main {
     flex-flow: column;
 }
 
-#a {
+#central_picture {
     background: url(images/iback-tablet.png);
     background-repeat: no-repeat;
     height: 736px;
@@ -105,7 +105,7 @@ article {
     margin: 0 0 1rem 0;
 }
     
-#aa {
+#central_top_inscription {
     font-family: 'OpenSans-Bold', 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
     font-size: 42pt;
     color: rgba(255, 255, 255, 255);
@@ -116,7 +116,7 @@ article {
     position: relative;
 }
 
-#ab {
+#central_lower_inscription {
     font-family: 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
     font-size: 32.39189pt;
     color: rgba(255, 255, 255, 255);
@@ -129,7 +129,7 @@ article {
     z-index: -1;
 }
 
-#ab span {
+#central_lower_inscription span {
     font-family: 'OpenSans-Bold', 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
     font-size: 90pt;
     font-weight: 900;
@@ -171,14 +171,161 @@ article .img {
 }
 
 @media (min-width: 1480px) {
-    #a {
+    #menu_icon {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 325px;
+        align-items: center;
+    }
+
+    #logo_and_contact {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 30pt;
+        background: url(images/logo-background-desktop.png);
+        background-position: 0;
+        width: 400px;
+        height: 70px;
+        padding-top: 19px;
+        margin-top: 50px;
+    }
+
+    #menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border: solid #eceef4;
+        border-width: 1px 0 0 0;
+    }
+
+    nav {
+        display: flex;
+        list-style: none;
+        position: relative;
+    }
+
+    nav li a {
+        display: block;
+        padding: 38px 35px;
+        border: solid #eceef4;
+        border-width: 1px 0.5px 0 0.5px;
+        text-decoration: none;
+        font-family: 'OpenSans-Bold', 'AdobeInvisFont', 'AdobeArabic-Regular';
+        font-size: 13pt;
+        color: rgba(109, 110, 113, 255);
+        text-align: left;
+    }
+
+    #HOME {
+        color: rgba(31, 170, 226, 255);
+        border-width: 1px 0.5px 0 0;   
+    }
+
+    #Contact {
+        border-width: 1px 0 0 0.5px;       
+    }
+
+    .search {
+        margin: 31px 0px 31px 170px;
+    }
+
+    .arrow-up {
+        width: 0; 
+        height: 0; 
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 15px solid #1faae2;
+        position: absolute;
+        left: 37px;
+        top: 86px;
+    }
+
+    #contact {
+        display: flex; 
+        margin-top: 113px;
+        height: 20px;
+    }
+
+    #location {
+        padding: 0 25px;
+        border: solid #bcbec3;
+        border-width: 0 1px;
+        height: 40px;
+        position: relative;
+    }
+
+    #location svg {
+        padding: 0;
+        margin: 0;
+    }
+
+    #location:before {
+        content: "Saudi Arabia . Alreyadah";
+        font-family: 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
+        font-size: 13pt;
+        color: rgba(109, 110, 113, 255);
+        text-align: center;
+        width: 240px;
+        position: absolute;
+        left: -83px;
+        top: -80px;
+        border: 1px solid #d4d4d5;
+        padding: 13px 0;
+        display: none;
+    }
+
+    #location:after {
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 12px solid #f00;
+        position: absolute;
+        left: 23px;
+        top: -29px;
+        display: none;
+    }
+
+    #location:hover:before {
+        display: block;
+    }
+
+    #location:hover:after {
+        display:block;
+    }
+
+    #phone {
+        padding-top: 5px; 
+        padding-right: 25px;
+    }
+
+    #mail {
+        padding-top: 2.5px;
+        padding-left: 15px;
+        flex: 33%;      
+    }
+
+    #contact div:hover svg path {
+        fill: rgb(31,170,226);
+    }
+
+    #central_picture {
         background: url(images/iback-desktop.png);
         height: 885px;
         background-size: 100% 885px;
         position: relative;
     }
     
-    #ar {
+    #articles {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -197,11 +344,11 @@ article .img {
         top: 15px;
     }
 
-    #ar1 {
+    #article1 {
         margin-left: 0;
     }
 
-    #ar2 {
+    #article2 {
         margin-right: 0;
     }
 
@@ -256,133 +403,5 @@ article .img {
 
     #switch img {
         padding: 100px 45px;
-    }
-
-    #nav {
-        display: none;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        height: 325px;
-        align-items: center;
-    }
-
-    #container1 {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    h1 {
-        font-size: 30pt;
-        background: url(images/logo-background-desktop.png);
-        background-position: 0;
-        width: 400px;
-        height: 70px;
-        padding-top: 19px;
-        margin-top: 50px;
-    }
-
-    #container2{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        border: solid #eceef4;
-        border-width: 1px 0 0 0;
-    }
-
-    nav {
-        display: flex;
-        list-style: none;
-        position: relative;
-    }
-
-    nav li a {
-        display: block;
-        padding: 38px 35px;
-        border: solid #eceef4;
-        border-width: 1px 0.5px 0 0.5px;
-        text-decoration: none;
-        font-family: 'OpenSans-Bold', 'AdobeInvisFont', 'AdobeArabic-Regular';
-        font-size: 13pt;
-        color: rgba(109, 110, 113, 255);
-        text-align: left;
-    }
-
-    #HOME {
-        color: rgba(31, 170, 226, 255);
-        border-width: 1px 0.5px 0 0;   
-    }
-
-    #Contact {
-        border-width: 1px 0 0 0.5px;       
-    }
-
-    .search {
-        margin: 31px 0px 31px 170px;
-    }
-
-    .arrow-up {
-        width: 0; 
-        height: 0; 
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-bottom: 15px solid #1faae2;
-        position: absolute;
-        left: 37px;
-        top: 86px;
-    }
-
-    #contact {
-        display: flex; 
-        margin-top: 130px;
-        height: 20px;
-    }
-
-    #location {
-        padding: 0 25px;
-        margin: 0 25px;
-        border: solid #bcbec3;
-        border-width: 0 1px;
-        height: 40px;
-        position: relative;
-    }
-
-    #location svg {
-        padding: 0;
-        margin: 0;
-    }
-
-    #location:before {
-        content: "Saudi Arabia . Alreyadah";
-        font-family: 'OpenSans-Light', 'AdobeInvisFont', 'AdobeArabic-Regular';
-        font-size: 13pt;
-        color: rgba(109, 110, 113, 255);
-        text-align: center;
-        width: 240px;
-        position: absolute;
-        left: -83px;
-        top: -80px;
-        border: 1px solid #d4d4d5;
-        padding: 13px 0;
-        display: none;
-    }
-
-    #location:hover:before {
-        display: block;
-    }
-
-    #phone {
-        padding-top: 5px; 
-    }
-
-    #mail {
-        padding-top: 2.5px;      
-    }
-
-    path:hover {
-        fill: rgb(31,170,226);
     }
 }
