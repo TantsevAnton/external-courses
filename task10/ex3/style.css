@@ -32,7 +32,7 @@ header {
     align-items: center;
 }
 
-h1 {
+#logo_and_contact h1 {
     font-family: 'OpenSans';
     font-size: 41pt;
     color: rgba(54, 135, 196, 255);
@@ -109,11 +109,12 @@ article {
     font-family: 'OpenSans-Bold', 'OpenSans-Light';
     font-size: 42pt;
     color: rgba(255, 255, 255, 255);
-    text-align: center;
-    padding-top: 15rem;
     margin: 0;
     z-index: 1;
     position: relative;
+    left: calc(50% - 375px);
+    top: 248px;
+    width: 672px;
 }
 
 #central_lower_inscription {
@@ -123,8 +124,8 @@ article {
     text-align: center;
     margin: 0;
     position: absolute;
-    top: 230px;
-    left: calc(50% - 355px); 
+    top: -13px;
+    left: -35px; 
     width: 800px;
     z-index: -1;
 }
@@ -134,7 +135,7 @@ article {
     font-size: 90pt;
     font-weight: 900;
     color: #bbedff;
-    margin: 13px;
+    margin: 10px;
 }
 
 #slider {
@@ -159,7 +160,7 @@ article p {
     text-align: justify;
 }
 
-article {
+#articles article {
     position: relative;
     margin: 10px 250px;
     padding-left: 130px; 
@@ -170,7 +171,7 @@ article .img {
     left: 5px;
 }
 
-@media (min-width: 1480px) {
+@media (min-width: 1650px) {
     #menu_icon {
         display: none;
     }
@@ -188,7 +189,7 @@ article .img {
         justify-content: space-around;
     }
 
-    h1 {
+    #logo_and_contact h1 {
         font-size: 30pt;
         background: url(images/logo-background-desktop.png);
         background-position: 0;
@@ -208,11 +209,17 @@ article .img {
 
     nav {
         display: flex;
-        list-style: none;
-        position: relative;
     }
 
-    nav li a {
+    nav ul {
+        display: flex;
+        list-style: none;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
         display: block;
         padding: 38px 35px;
         border: solid #eceef4;
@@ -327,8 +334,7 @@ article .img {
 
     #mail {
         padding-top: 2.5px;
-        padding-left: 15px;
-        flex: 33%;      
+        padding-left: 25px;     
     }
 
     #contact div:hover svg path {
@@ -348,7 +354,7 @@ article .img {
         justify-content: center;
     }
 
-    article {
+    #articles article {
         margin: 50px 5%;
         width: 530px;
     }
@@ -372,7 +378,7 @@ article .img {
     #slider {
         display: flex;
         position: absolute;
-        left: 44%;
+        left: 41.5%;
         top: 60%;
         height: 241px;
     }
