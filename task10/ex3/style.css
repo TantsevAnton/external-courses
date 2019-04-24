@@ -267,7 +267,7 @@ article .img {
         margin: 0;
     }
 
-    #location:before {
+    #tooltip {
         content: "Saudi Arabia . Alreyadah";
         font-family: 'OpenSans-Light';
         font-size: 13pt;
@@ -282,21 +282,38 @@ article .img {
         display: none;
     }
 
-    #location:after {
+    #location:before {
         content: "";
         width: 0; 
         height: 0; 
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-top: 12px solid #f00;
+        border-top: 12px solid #d4d4d5;
         position: absolute;
         left: 23px;
         top: -29px;
         display: none;
     }
 
-    #location:hover:before {
+    #location:after {
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-left: 13px solid transparent;
+        border-right: 13px solid transparent;
+        border-top: 10.4px solid #fff;
+        position: absolute;
+        left: 25px;
+        top: -29px;
+        display: none;
+    }
+
+    #location:hover #tooltip {
         display: block;
+    }
+
+    #location:hover:before {
+        display:block;
     }
 
     #location:hover:after {
