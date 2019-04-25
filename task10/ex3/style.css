@@ -97,7 +97,10 @@ main {
     background: url(images/iback-tablet.png);
     background-repeat: no-repeat;
     height: 736px;
-    background-size: 100% 736px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
 }
 
 article {
@@ -343,8 +346,11 @@ article .img {
 
     #central_picture {
         background: url(images/iback-desktop.png);
+        background-repeat: no-repeat;
+        width: 100%;
         height: 885px;
-        background-size: 100% 885px;
+        background-size: cover;
+        background-position: 50% 50%;
         position: relative;
     }
     
@@ -378,7 +384,7 @@ article .img {
     #slider {
         display: flex;
         position: absolute;
-        left: 41.5%;
+        left: calc(50% - 175px);
         top: 60%;
         height: 241px;
     }
