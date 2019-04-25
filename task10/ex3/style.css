@@ -55,7 +55,7 @@ header {
     padding: 6px 10px 6px 15px;
     border: none;
     font-family: 'OpenSans-Light';
-    font-size: 15pt;
+    font-size: 12pt;
     color: black;
     text-align: left;
     outline: none;
@@ -71,7 +71,7 @@ header {
     height: 25px;
     position: absolute;
     top: 7px;
-    right: 240px;
+    right: 205px;
 }
 
 #menu_icon {
@@ -98,7 +98,6 @@ main {
     background-repeat: no-repeat;
     height: 736px;
     width: 100%;
-    background-size: cover;
     background-position: 50% 50%;
     position: relative;
 }
@@ -151,14 +150,14 @@ article {
 
 h2 {
     font-family: 'OpenSans-Bold';
-    font-size: 26pt;
+    font-size: 23pt;
     color: rgba(109, 110, 113, 255);
     text-align: left;
 }
 
 article p {
     font-family: 'OpenSans-Light';
-    font-size: 16pt;
+    font-size: 13pt;
     color: rgba(109, 110, 113, 255);
     text-align: justify;
 }
@@ -174,7 +173,7 @@ article .img {
     left: 5px;
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1345px) {
     #menu_icon {
         display: none;
     }
@@ -224,12 +223,12 @@ article .img {
 
     nav ul li a {
         display: block;
-        padding: 38px 35px;
+        padding: 38px 32px;
         border: solid #eceef4;
         border-width: 1px 0.5px 0 0.5px;
         text-decoration: none;
         font-family: 'OpenSans-Bold';
-        font-size: 13pt;
+        font-size: 10pt;
         color: rgba(109, 110, 113, 255);
         text-align: left;
     }
@@ -244,18 +243,18 @@ article .img {
     }
 
     .search {
-        margin: 31px 0px 31px 170px;
+        margin: 31px 0px 31px 210px;
     }
 
     .arrow-up {
         width: 0; 
         height: 0; 
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-bottom: 15px solid #1faae2;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 11px solid #1faae2;
         position: absolute;
-        left: 37px;
-        top: 86px;
+        left: 31px;
+        top: 85px;
     }
 
     #contact {
@@ -349,7 +348,6 @@ article .img {
         background-repeat: no-repeat;
         width: 100%;
         height: 885px;
-        background-size: cover;
         background-position: 50% 50%;
         position: relative;
     }
@@ -361,24 +359,15 @@ article .img {
     }
 
     #articles article {
-        margin: 50px 5%;
-        width: 530px;
+        margin: 50px 3%;
     }
 
     article p {
-        width: 519px;
+        width: 420px;
     }
 
     article .img {
         top: 15px;
-    }
-
-    #article1 {
-        margin-left: 0;
-    }
-
-    #article2 {
-        margin-right: 0;
     }
 
     #slider {
