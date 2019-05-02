@@ -1,0 +1,18 @@
+img {
+    position: fixed;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 500px;
+    animation: animation 2s infinite alternate linear; 
+}
+
+@keyframes animation {
+    from {
+        clip-path: circle(); 
+    }
+
+    to {
+        -webkit-mask: url(images/fishes.svg) center / 100% 100%;
+    }
+}
