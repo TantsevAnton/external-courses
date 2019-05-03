@@ -1,0 +1,118 @@
+#loader {
+    position: fixed;
+    top: calc(50% - 76px);
+    left: calc(50% - 76px);
+    border: 16px solid lightgray; 
+    border-top: 16px solid gold; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    z-index: 1;
+}
+
+@keyframes spin {
+    from { 
+        transform: rotate(0deg); 
+    }
+
+    to { 
+        transform: rotate(360deg);
+    }
+}
+
+#ball {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(at 40px 45px, #55ddff, #0076a5);
+    border-radius: 50%;
+    animation: jump 1s ease-in infinite alternate; 
+    left: calc(25% - 50px);
+}
+
+.block {
+    width: 150px;
+    height: 15px;
+    background: #CC3F85;
+    position: absolute;
+    left: calc(25% - 75px);
+}
+
+#block_1 {
+    top: 25%;
+}
+
+#block_2 {
+    top: 75%;
+}
+
+@keyframes jump {
+    from {
+        top: calc(25% + 15px);
+    }
+
+    to {
+        top: calc(75% - 100px);
+    }
+}
+
+#animated_figure {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    right: calc(25% - 50px);
+    animation: animation infinite 15s linear;
+    position: absolute;
+}
+
+@keyframes animation {
+    0% {
+        background: radial-gradient(circle at 80px 40px, #f9eec7, #ff3f0f, #ff0f0f);
+        border-radius: 50%;
+        transform: scale(1, 1) skew(0, 0) rotate(0);
+    }
+
+    14.3% {
+        background: radial-gradient(circle at 80px 40px, #f9eec7, #ff3f0f, #ff0f0f);
+        border-radius: 0;
+        transform: scale(1, 1) skew(0, 0) rotate(0); 
+    }
+
+    28.6% {
+        background: linear-gradient(to top, #fafeea, #6bf136);
+        border-radius: 0;
+        transform: scale(1, 1) skew(0, 0) rotate(0);
+    }
+
+    42.9% {
+        background: linear-gradient(to top, #fafeea, #6bf136); 
+        border-radius: 0; 
+        transform: scale(1.5, 1.5) skew(40deg, 10deg) rotate(0);
+    }
+    
+    57.2%  {
+        background: linear-gradient(to top, #fafeea, #6bf136);
+        border-radius: 0;  
+        transform: scale(1.5, 1.5) skew(40deg, 10deg) rotate(130deg);
+        
+    }
+
+    71.5% {
+        background: radial-gradient(circle closest-corner at 40px 30px, #fff, #009ec3);
+        border-radius: 0;
+        transform: scale(1.5, 1.5) skew(40deg, 10deg) rotate(130deg);
+    }
+
+    85.8% {
+        background: radial-gradient(circle closest-corner at 40px 30px, #fff, #009ec3);
+        border-radius: 50%;
+        transform: scale(1.5, 1.5) skew(0deg, 0deg) rotate(130deg);
+    }
+
+    100% {
+        background: radial-gradient(circle at 80px 40px, #f9eec7, #ff3f0f, #ff0f0f);
+        border-radius: 50%;
+        transform: scale(1, 1) skew(0, 0) rotate(0);
+    }
+  }
