@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "FontAwesome";
+    src: url(fonts/FontAwesome.otf);
+}
+
+.star {
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 54px;
+    color: rgba(255, 171, 0, 255);
+    overflow: hidden;
+    width: 0.46em;
+}
+
+.left_side {
+    direction: ltr;    
+}
+
+.right_side {
+    direction: rtl;
+    margin-right: 5px; 
+}
