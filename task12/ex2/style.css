@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+#user {
+    width: 50px;
+    background: gold;
+    padding: 15px 75px;
+    font-size: 20px;
+    margin: 0 0 0 auto;
+}
+
+#menu {
+    width: 180px;
+    background: lightblue;
+    margin: 0 0 0 auto;
+    padding: 10px;
+    text-align: right;
+    display: none;
+}
+
+#menu input {
+    font-size: 14px;
+}
+
+#menu button {
+    font-size: 15px;
+}
