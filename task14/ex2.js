@@ -1,24 +1,18 @@
 function Hangman(word) {
-    var word = String(word).toLowerCase();
-
-    var errorsLeft = 6;
-
-    var wrongSymbols = []; 
-
-    var guessedString = [];
-    for (let i = 0; i < word.length; i++) {
-        guessedString[i] = "_";
-    }
+    var word, errorsLeft, wrongSymbols, guessedString;
 
     this.startAgain = function(newWord) {
         word = String(newWord).toLowerCase();
         errorsLeft = 6;
         wrongSymbols = [];
+        guessedString = [];
         for (let i = 0; i < word.length; i++) {
             guessedString[i] = "_";
         }
         return this;
     }
+
+    this.startAgain(word);
 
     this.getGuessedString = function() {
         return guessedString.join("");

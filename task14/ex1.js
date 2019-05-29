@@ -47,6 +47,7 @@ var Calculator = (function() {
     }
 
     function fetchData(callback) {
+        Calculator.setState(500);
         setTimeout(callback, 1000);
     }
 
@@ -88,7 +89,6 @@ Calculator.setState(1);
 console.log(Calculator.getResult());
 
 var callback = function() {
-    Calculator.setState(500);
     console.log(Calculator.getResult());
 }
 
