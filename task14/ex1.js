@@ -47,7 +47,7 @@ var Calculator = (function() {
     }
 
     function fetchData(callback) {
-        Calculator.setState(500);
+        setState(500);
         setTimeout(callback, 1000);
     }
 
