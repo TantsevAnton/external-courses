@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "ProximaNova";
+    src: url(fonts/Proxima_Nova/Proxima\ Nova\ Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(fonts/Proxima_Nova/Proxima\ Nova\ Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(fonts/Proxima_Nova/Proxima\ Nova\ Light.otf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url(fonts/FontAwesome.otf);
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 990px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2f364a;
+    display: flex;
+    flex-basis: 4.545%;
+    flex-shrink: 0;
+    min-height: 45px;
+}
+
+main {
+    display: flex;
+    overflow-y: hidden;
+}
+
+aside {
+    flex-basis: 15.152%;
+    display: flex;
+    flex-direction: column;
+    background-color: #19202e;
+}
+
+#Add_a_book_Panel {
+    flex-grow: 0;
+    background-color: #1f2637;
+    border-bottom: 1px solid #141824;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+#Add_a_book_Panel button {
+    width: 160px;
+    height: 44px;
+    margin: 35px 20px;
+    background-color: #f2795a;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+#Add_a_book_Panel button span {
+    font-family: "ProximaNova";
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 13px;
+}
+
+#Add_a_book_Panel button span:before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    position: relative;
+    right: 18px;
+    vertical-align: -1.5px;
+}
+
+#Add_a_book_Panel button:active {
+    box-shadow: inset 0 0 2.5px 1.5px black;
+}
+
+#Add_a_book_Panel button:active span {
+    font-size: 13px;
+}
+
+#Add_a_book_Panel button:active span:before {
+    font-size: 15px;
+}
+
+#Main_Nav {
+    flex-grow: 0.1;
+    background-color: #1f2637;
+    border-top: 1px solid #282f41; 
+    border-bottom: 1px solid #141824;    
+    margin-bottom: 4px;
+}
+
+#Main_Nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#Main_Nav ul li a {
+    display: block; 
+    padding: 10px 21px;
+    text-decoration: none;
+}
+
+#Main_Nav ul li a span {
+    font-family: "ProximaNova";
+    font-size: 13px;
+    color: rgba(120, 130, 157, 255);
+    font-weight: 400;
+    position: relative;
+    left: calc(50% - 80px);
+}
+
+#Main_Nav ul li a span:before {
+    font-family: "FontAwesome";
+    font-size: 14px;
+    margin-right: 12px;
+    vertical-align: -1px;
+}
+
+#Now_Reading:before {
+    content: "";
+}
+
+#Browse:before {
+    content: "";
+}
+
+#Buy_Books:before {
+    content: "";
+}
+
+#Favourite_Books:before {
+    content: "";
+}
+
+#Wishlist:before {
+    content: "";
+}
+
+#History:before {
+    content: "";
+}
+
+#Main_Nav ul li a:focus {
+    background: #15a4fa;
+}
+
+#Main_Nav ul li a:focus span {
+    color: white;
+}
+
+#Personal_Categories {
+    flex-grow: 0;
+    background-color: #1f2637;
+    border-top: 1px solid #282f41; 
+    border-bottom: 1px solid #141824;
+    margin-bottom: 4px;
+}
+
+#Personal_Categories ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#Personal_Categories ul li {
+    width: 95px;
+    font-family: "ProximaNova";
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(120, 130, 157, 255);
+    padding: 5px 43px;
+    padding-right: 25px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    left: calc(50% - 108px);
+}
+
+#Personal_Categories ul li:before {
+    content: "•"; 
+    font-size: 27px;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+}
+
+#Must_Read:before {
+    color: #e64c66;
+}
+
+#Best_Of:before {
+    color: #ffab00;
+}
+
+#Classic:before {
+    color: #00bfdd;
+}
+
+#Non_Fiction:before {
+    color: #726fc5;
+}
+
+#History_List {
+    flex-grow: 1;
+    background-color: #1f2637;
+    border-top: 1px solid #282f41;   
+}
+
+#History_List ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#History_List ul li {
+    width: 150px;
+    font-family: "ProximaNova";
+    font-size: 12px;
+    font-weight: 400;
+    color: #4f5a6f;
+    padding-left: 40px;
+    margin: 30px 0;
+    position: relative;
+    left: calc(50% - 95px);
+}
+
+#History_List ul li:before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    color: #545d74;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+}
+
+#History_List ul li a {
+    text-decoration: none;
+    color: #677b92;
+}
+
+#History_List ul li p {
+    font-family: "ProximaNova";
+    font-size: 12px;
+    font-weight: 300;
+    color: #545d74;
+}
+
+section {
+    height: 1120px;
+}
+
+footer {
+    background-color: #181e2c;
+    display: flex;
+    flex-basis: 4.545%;
+    flex-shrink: 0;
+    min-height: 45px;
+}
