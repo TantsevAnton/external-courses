@@ -1,8 +1,10 @@
 let  bookList = document.querySelector('.Results');
+let mostRecent = document.querySelector('#mostRecent');
 
 function addBookToList(bookFromJSON) {
     let book = document.createElement('div');
     book.classList.add('book');
+    book.id = bookFromJSON.id;
     bookList.appendChild(book);
     let bookCover = document.createElement('img');
     bookCover.src = bookFromJSON.image_url;
