@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ex4</title>
+    <title>library</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -52,6 +53,31 @@
         </aside>
 
         <section>
+            <header>
+                <h1>Browse Available Books</h1>
+
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span>All Books</span></a></li>
+                            <li><a href="#"><span>Most Recent</span></a></li>
+                            <li><a href="#"><span>Most Popular</span></a></li>      
+                            <li><a href="#"><span>Free Books</span></a></li>
+                        </ul>
+                    </nav>
+    
+                    <div class="search">
+                        <form>
+                            <input type="search" placeholder="Enter Keywords">
+                            <input type="submit" value="">
+                        </form>
+                    </div> 
+                </div>
+            </header>
+
+            <div class="Results">
+                <div class="books"></div>
+            </div>
         </section>
     </main>
 
