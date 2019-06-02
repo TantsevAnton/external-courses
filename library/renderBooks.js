@@ -74,3 +74,17 @@ getData('https://rsu-library-api.herokuapp.com/books')
         books.forEach(book =>
             addBookToList(book)))
     .catch(error => console.error(error));
+
+debounce = function (func, time) {
+    let delay = null;
+    return function (...args) {
+        var complete = function() {
+            func.apply(this, args);
+            delay = null;
+        }
+        if (delay) {
+            clearTimeout(delay);
+        }
+        delay = setTimeout(complete, time)
+    }
+}
