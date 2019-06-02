@@ -2,24 +2,19 @@ let  bookList = document.querySelector('.Results');
 let mostRecent = document.querySelector('#mostRecent');
 
 function addBookToList(bookFromJSON) {
-    let book = document.createElement('div');
+    let book = document.createElement('div'); 
+    book.id = bookFromJSON.id;  
     book.classList.add('book');
-    book.id = bookFromJSON.id;
-    bookList.appendChild(book);
     let bookCover = document.createElement('img');
     bookCover.src = bookFromJSON.image_url;
-    book.appendChild(bookCover);
     let title = document.createElement('span');
     title.classList.add('titles');
     title.innerHTML = bookFromJSON.title;
-    book.appendChild(title);
     let author = document.createElement('span');
     author.classList.add('author');
     author.innerHTML = 'by ' + bookFromJSON.author.firstName + ' ' + bookFromJSON.author.lastName;
-    book.appendChild(author);
     let rating = document.createElement('div');
     rating.classList.add('rating');
-    book.appendChild(rating);
 
     var stars = [];
     var establishedRating;
@@ -46,6 +41,12 @@ function addBookToList(bookFromJSON) {
             stars[i].innerHTML = '';
         }
     }
+
+    bookList.appendChild(book);
+    book.appendChild(bookCover);
+    book.appendChild(title);
+    book.appendChild(author);
+    book.appendChild(rating);
 }
 
 function getData(url) {
